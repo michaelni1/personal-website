@@ -25,6 +25,22 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+@media screen and (max-height: 615px) {
+    .text1 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+}
+@media screen and (max-height: 650px) {
+    .painting {
+        display: none;
+    }
+    input[type=button] {
+        display: none;
+    }
+}
 .next_box {
     top: 0;
     width: 100%;

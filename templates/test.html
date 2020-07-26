@@ -2,7 +2,7 @@
 
 <html>
     <style>
-        .first_load {
+        /* .first_load {
             position: absolute;
             top: 0; right: 0; bottom: 0; left: 0;
             background: rgb(122, 138, 81);
@@ -16,23 +16,28 @@
             -moz-transform: translateX(-50%) translateY(-50%);
             -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
+        } */
+        @media screen and (min-width: 2px) {
+            #erase {
+                display: none;
+            }
         }
     </style>
     <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
     <body>
-        <div class="first_load">
+        <!-- <div class="first_load">
             <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
         </div>
-        <input type="button" value="Random Artwork" class="new_btn"/>
-        <div><p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p></div>
+        <input type="button" value="Random Artwork" class="new_btn"/> -->
+        <div id="erase"><p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p></div>
         
         <div class="box">a</div>
         
         <p>Hover over the div element above, to see the transition effect.</p>
-        <script type=text/javascript>
+        <!-- <script type=text/javascript>
             $(window).on('load', function(){
                 $('.first_load').hide();
             });
-        </script>
+        </script> -->
     </body>
 </html>
