@@ -31,7 +31,7 @@ def get_painting(im_num):
 
 @app.route('/')
 def index():
-   return render_template('welcome.html')
+   return render_template('index.html')
 
 @app.route('/test')
 def test():

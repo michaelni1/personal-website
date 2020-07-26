@@ -1,9 +1,3 @@
-function first_painting() {
-    $('body').css('background-image', 'url(' + '/static/img/first_paint.jpg' + ')');
-    $('#title_here').attr('href', 'https://www.nga.gov/collection/art-object-page.50727.html');
-    $('#title_here').text('A View of the Mountain Pass Called the Notch of the White Mountains (Crawford Notch)');
-};
-
 function display_painting() {
     $('.next_box').show();
     $('.next_box').css('right', '1px');
