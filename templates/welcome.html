@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/welcome.css') }}">
+        <script type=text/javascript>
+            $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+            main_url = "{{ url_for('main') }}"
+        </script>
+        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+    </head>
+
+    <body onload="first_painting()">
+        <div class="text1">
+            <p>Hi there! It's nice to meet you.</p>
+        </div>
+        <div class="text2">
+            <p>Thanks for taking the time to visit my website.</p>
+        </div>
+        <img class="main" src="{{ url_for('static',filename='img/r_arrow.png') }}" onclick="animate_box(main_url)">
+        <div class="painting">
+            <p><a href="" id="title_here">Loading...</a></p>
+        </div>
+        <input type="button" value="Random Artwork" onclick="display_painting();"/>
+        <div class="next_box" style="display: none">
+            <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
+        </div>
+        <script type=text/javascript src="{{ url_for('static', filename='welcome.js') }}"></script>
+    </body>
+</html>

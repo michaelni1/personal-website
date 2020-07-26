@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        .box
+        {
+        width:100%;
+        height:100%;
+        background:red;
+        transition:2s;
+        -webkit-transition:2s;
+        -moz-transition:2s;
+        position:absolute;
+        right:calc(100% - 1px);
+        top: 0;
+        }
+        /* .box:active
+        {
+            right:0px;
+        } */
+    </style>
+    <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $( ".box" ).click(function() {
+            //alert($( this ).css( "transform" ));
+            $(this).css("right", "1px");
+        });
+    });
+        // $(document).ready(function() {
+        //     $('.new_btn').click(function() {
+        //         alert("Hello");
+        //     });
+        // });
+    </script>
+    <body>
+        <input type="button" value="Random Artwork" class="new_btn"/>
+        <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+        
+        <div class="box">a</div>
+        
+        <p>Hover over the div element above, to see the transition effect.</p>
+        
+    </body>
+</html>
