@@ -3,13 +3,32 @@
 <html>
     <head>
         <title>Michael's website</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
     </head>
 
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
     <body>
-        <p>A little bit about me...</p>
-        <p>My resume</p>
-        <p>Interests & Passions</p>
-        <p>Let's play some of my favorite games!</p>
+        <div class="first_load" style="display: block">
+            <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
+        </div>
+        <div class="boutme"></div>
+        <div class="boutme2"></div>
+        <p class="boutme_text">A little bit about me...</p>
+        <div class="resume">
+            <p>My resume</p>
+        </div>
+        <div class="interests">
+            <p>Interests & Passions</p>
+        </div>
+        <div class="games">
+            <p>Let's play some of my favorite games!</p>
+        </div>
+        <script type=text/javascript>
+            $(window).on('load', function() {
+                $('.first_load').hide();
+            });
+        </script>
+        <script type=text/javascript src="{{ url_for('static', filename='main.js') }}"></script>
     </body>
 </html>
