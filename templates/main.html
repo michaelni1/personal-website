@@ -12,23 +12,21 @@
         <div class="first_load" style="display: block">
             <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
         </div>
-        <div class="boutme"></div>
-        <div class="boutme2"></div>
-        <p class="boutme_text">A little bit about me...</p>
-        <div class="resume">
-            <p>My resume</p>
+        <div class="boutme_container">
+            <div class="boutme"></div>
+            <div class="boutme2"></div>
+            <!-- <p class="boutme_text">A little bit about me...</p> -->
         </div>
-        <div class="interests">
+        <div class="resume_container">bye</div>
+        <!-- <div class="resume"></div>
+        <div class="resume2"></div>
+        <p>My resume</p> -->
+        <!-- <div class="interests">
             <p>Interests & Passions</p>
         </div>
         <div class="games">
             <p>Let's play some of my favorite games!</p>
-        </div>
-        <script type=text/javascript>
-            $(window).on('load', function() {
-                $('.first_load').hide();
-            });
-        </script>
+        </div> -->
         <script type=text/javascript src="{{ url_for('static', filename='main.js') }}"></script>
     </body>
 </html>
