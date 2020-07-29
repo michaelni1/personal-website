@@ -8,8 +8,6 @@
             $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
             main_url = "{{ url_for('main') }}"
         </script>
-        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
-        <script type=text/javascript src="{{ url_for('static', filename='index.js') }}"></script>
     </head>
     <body>
         <div class="first_load" style="display: block">
@@ -30,10 +28,7 @@
         <div class="next_box" style="display: none">
             <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
         </div>
-        <script type=text/javascript>
-            $(window).on('load', function() {
-                $('.first_load').hide();
-            });
-        </script>
+        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script type=text/javascript src="{{ url_for('static', filename='index.js') }}"></script>
     </body>
 </html>

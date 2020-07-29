@@ -57,7 +57,7 @@ body {
     max-width: 10%;
     max-height: 10%; 
     position: absolute;
-    top: 50.5%;
+    top: 37%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);

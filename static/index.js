@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+    $('.first_load').hide();
+});
+
 function display_painting() {
     $('.next_box').show();
     $('.next_box').css('right', '1px');
