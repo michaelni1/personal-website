@@ -5,7 +5,7 @@ $(window).on('load', function() {
 function display_painting() {
     $('.next_box').show();
     $('.next_box').css('right', '1px');
-    rand_obj = Math.floor(Math.random() * 48);
+    rand_obj = Math.floor(Math.random() * 47);
     link_extend = '/_get_painting/' + rand_obj.toString();
     $.getJSON($SCRIPT_ROOT + link_extend, function(data) {
         $(document).ready(function() {
@@ -18,7 +18,7 @@ function display_painting() {
             };
             img.src = img_src;
         });
-        $('#title_here').attr('href', data.met_link);
+        $('#title_here').attr('href', data.link);
         $('#title_here').text(data.title);
     });
 };

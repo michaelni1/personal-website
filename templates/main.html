@@ -12,7 +12,7 @@
             <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
         </div>
         <div class="nav_cont">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(177, 204, 115);">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0);">
                 <a class="navbar-brand" href="{{ url_for('main') }}">Michael's website</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,14 @@
                 </div>
             </nav>
         </div>
-        <div class="art_text">
-            <a href="https://denverartmuseum.org/object/1954.71" id="title_here">Dream of Arcadia</a>
+        <div class="next_box" style="display: none">
+            <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
         </div>
+        <div class="img_text">
+            <a href="https://images.nasa.gov/details-PIA12348" id="title_here">
+                Great Observatories' Unique Views of the Milky Way</a>
+        </div>
+        <input type="button" value="Random Space Picture" onclick="display_space()"/>
         <div id="about">
             <div class="boutmediv"></div>
             <div class="boutme2div"></div>
@@ -62,6 +67,7 @@
             <div class="projects2div"></div>
             <div class="text"><p class="projects_hide">My projects (more to come!)</p></div>
         </div>
+        <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
         <script type=text/javascript src="{{ url_for('static', filename='main.js') }}"></script>
