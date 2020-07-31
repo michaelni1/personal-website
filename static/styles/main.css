@@ -151,25 +151,26 @@ iframe {
     width: 100%;
     height: 100%;
 }
-#interests {
+#interests_div {
     position: relative;
     width: 100%;
     background-color: rgb(32, 32, 32);
     overflow: hidden;
 }
-.interestsdiv {
+.interests_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(32, 32, 32);
     float: left;
 }
-.interests2div {
+.interests2_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(32, 32, 32);
     left: 50%;
+    float: left;
 }
 .interests_text {
     margin: 0 auto;
@@ -183,24 +184,26 @@ iframe {
     -webkit-text-stroke: 1px black;
     font-size: 125%;
 }
-#projects {
+#projects_div {
     position: relative;
     width: 100%;
     background-color: rgb(36, 36, 36);
+    overflow: hidden;
 }
-.projectsdiv {
+.projects_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(36, 36, 36);
     float: left;
 }
-.projects2div {
+.projects2_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(36, 36, 36);
     left: 50%;
+    float: left;
 }
 .projects_content {
     width: 100%;

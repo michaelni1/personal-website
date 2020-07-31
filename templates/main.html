@@ -72,9 +72,10 @@
                 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSgRS9O_Y3o_wf48HETQFXUKpzVhoQLIlc50PMnmF--rJiJhapCh2rQKlzAet4rAQB7KdPXYH9m8RR_/pub?embedded=true"></iframe>
             </div><br><br>
         </div>
-        <div id="interests" style="height: 200px"><br><br>
-            <div class="interestsdiv"></div>
-            <div class="interests2div"></div>
+        <div id="interests_div" style="height: 200px"><br><br>
+            <a class="anchor" id="interests"></a>
+            <div class="interests_transit"></div>
+            <div class="interests2_transit"></div>
             <div class="text"><p class="interests_hide">My interests & passions</p></div>
             <div class="interests_text">
                 <p class="interests_text2">
@@ -84,12 +85,12 @@
                 </p>
             </div><br><br>
         </div>
-        <div id="projects" style="height: 200px"><br><br>
-            <div class="projectsdiv"></div>
-            <div class="projects2div"></div>
+        <div id="projects_div" style="height: 200px"><br><br>
+            <a class="anchor" id="projects"></a>
+            <div class="projects_transit"></div>
+            <div class="projects2_transit"></div>
             <div class="text"><p class="projects_hide">My projects (more to come!)</p></div>
-            <div class="projects_content">
-            </div>
+            <div class="projects_content"></div>
         </div>
         <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>

@@ -71,46 +71,52 @@ $('.resume_hide').click(function() {
     $('#resume_div').css('height', '');
 });
 
-$('.interestsdiv').click(function() {
-    $('#interests').css('background-color', 'transparent');
-    $('.interestsdiv').hide('slide', {direction:'left'}, 500);
-    $('.interests2div').hide('slide', {direction:'right'}, 500);
+$('.interests_transit').click(function() {
+    $('#interests_div').css('background-color', 'transparent');
+    $('.interests_transit').hide('slide', {direction:'left'}, 500);
+    $('.interests2_transit').hide('slide', {direction:'right'}, 500);
     $('.interests_hide').hide();
+    $('#interests_div').css('height', '');
 });
 
-$('.interests2div').click(function() {
-    $('#interests').css('background-color', 'transparent');
-    $('.interestsdiv').hide('slide', {direction:'left'}, 500);
-    $('.interests2div').hide('slide', {direction:'right'}, 500);
+$('.interests2_transit').click(function() {
+    $('#interests_div').css('background-color', 'transparent');
+    $('.interests_transit').hide('slide', {direction:'left'}, 500);
+    $('.interests2_transit').hide('slide', {direction:'right'}, 500);
     $('.interests_hide').hide();
+    $('#interests_div').css('height', '');
 });
 
 $('.interests_hide').click(function() {
-    $('#interests').css('background-color', 'transparent');
-    $('.interestsdiv').hide('slide', {direction:'left'}, 500);
-    $('.interests2div').hide('slide', {direction:'right'}, 500);
+    $('#interests_div').css('background-color', 'transparent');
+    $('.interests_transit').hide('slide', {direction:'left'}, 500);
+    $('.interests2_transit').hide('slide', {direction:'right'}, 500);
     $('.interests_hide').hide();
+    $('#interests_div').css('height', '');
 });
 
-$('.projectsdiv').click(function() {
-    $('#projects').css('background-color', 'transparent');
-    $('.projectsdiv').hide('slide', {direction:'left'}, 500);
-    $('.projects2div').hide('slide', {direction:'right'}, 500);
+$('.projects_transit').click(function() {
+    $('#projects_div').css('background-color', 'transparent');
+    $('.projects_transit').hide('slide', {direction:'left'}, 500);
+    $('.projects2_transit').hide('slide', {direction:'right'}, 500);
     $('.projects_hide').hide();
+    $('#projects_div').css('height', '');
 });
 
-$('.projects2div').click(function() {
-    $('#projects').css('background-color', 'transparent');
-    $('.projectsdiv').hide('slide', {direction:'left'}, 500);
-    $('.projects2div').hide('slide', {direction:'right'}, 500);
+$('.projects2_transit').click(function() {
+    $('#projects_div').css('background-color', 'transparent');
+    $('.projects_transit').hide('slide', {direction:'left'}, 500);
+    $('.projects2_transit').hide('slide', {direction:'right'}, 500);
     $('.projects_hide').hide();
+    $('#projects_div').css('height', '');
 });
 
 $('.projects_hide').click(function() {
-    $('#projects').css('background-color', 'transparent');
-    $('.projectsdiv').hide('slide', {direction:'left'}, 500);
-    $('.projects2div').hide('slide', {direction:'right'}, 500);
+    $('#projects_div').css('background-color', 'transparent');
+    $('.projects_transit').hide('slide', {direction:'left'}, 500);
+    $('.projects2_transit').hide('slide', {direction:'right'}, 500);
     $('.projects_hide').hide();
+    $('#projects_div').css('height', '');
 });
 
 $('.nav-item_bout').click(function() {
@@ -130,15 +136,17 @@ $('.nav-item_res').click(function() {
 });
 
 $('.nav-item_inter').click(function() {
-    $('#interests').css('background-color', 'transparent');
-    $('.interestsdiv').hide('slide', {direction:'left'}, 500);
-    $('.interests2div').hide('slide', {direction:'right'}, 500);
+    $('#interests_div').css('background-color', 'transparent');
+    $('.interests_transit').hide('slide', {direction:'left'}, 500);
+    $('.interests2_transit').hide('slide', {direction:'right'}, 500);
     $('.interests_hide').hide();
+    $('#interests_div').css('height', '');
 });
 
 $('.nav-item_pro').click(function() {
-    $('#projects').css('background-color', 'transparent');
-    $('.projectsdiv').hide('slide', {direction:'left'}, 500);
-    $('.projects2div').hide('slide', {direction:'right'}, 500);
+    $('#projects_div').css('background-color', 'transparent');
+    $('.projects_transit').hide('slide', {direction:'left'}, 500);
+    $('.projects2_transit').hide('slide', {direction:'right'}, 500);
     $('.projects_hide').hide();
+    $('#projects_div').css('height', '');
 })
