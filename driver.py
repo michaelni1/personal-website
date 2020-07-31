@@ -1,7 +1,9 @@
 from flask import Flask, redirect, url_for, request, render_template, jsonify
+from flask_cors import CORS
 import requests, json
 
 app = Flask(__name__)
+CORS(app)
 
 #class to store image info
 class Image:

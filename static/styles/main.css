@@ -47,13 +47,13 @@ body {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-top: 220px;
+    padding-top: 219px;
 }
-.nav_cont {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+a.anchor {
+    display: block;
+    position: relative;
+    visibility: none;
+    top: -55px;
 }
 #title_here {
     color: white;
@@ -61,6 +61,7 @@ body {
     -webkit-text-stroke: 1px black;
 }
 .img_text {
+    margin-top: 125px;
     position: relative;
     display: inline-block;
     left: 50%;
@@ -77,56 +78,84 @@ body {
     backdrop-filter: blur(150%);
     transition: 1s ease;
 }
-#about {
-    scroll-margin-top: 55px;
-    margin-top: 81px;
+#about_div {
+    margin-top: 157px;
     position: relative;
     width: 100%;
-    height: 200px;
-    top: 150%;
     background-color: rgb(22, 22, 22);
+    overflow: hidden;
 }
-.boutmediv {
-    position: absolute;
+.boutme_transit {
     width: 50%;
     height: 100%;
     background-color: rgb(22, 22, 22);
     float: left;
 }
-.boutme2div {
-    position: absolute;
+.boutme2_transit {
     width: 50%;
     height: 100%;
     background-color: rgb(22, 22, 22);
     left: 50%;
+    float: left;
 }
-#resume {
-    scroll-margin-top: 53px;
+.about_content {
+    width: 100%;
+}
+.about_pic {
+    margin: 0 auto;
+    background-image: url('/static/img/me_pic.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+.about_text {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+.about_text2 {
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    font-size: 125%;
+}
+#resume_div {
     position: relative;
     width: 100%;
-    height: 200px;
     background-color: rgb(28, 28, 28);
+    overflow: hidden;
 }
-.resumediv {
+.resume_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(28, 28, 28);
     float: left;
 }
-.resume2div {
+.resume2_transit {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: rgb(28, 28, 28);
     left: 50%;
+    float: left;
+}
+.resume_content {
+    margin: 0 auto;
+    height: 1000px;
+    width: 900px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
 }
 #interests {
-    scroll-margin-top: 53px;
     position: relative;
     width: 100%;
-    height: 200px;
     background-color: rgb(32, 32, 32);
+    overflow: hidden;
 }
 .interestsdiv {
     position: absolute;
@@ -142,11 +171,21 @@ body {
     background-color: rgb(32, 32, 32);
     left: 50%;
 }
+.interests_text {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: red;
+}
+.interests_text2 {
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+    font-size: 125%;
+}
 #projects {
-    scroll-margin-top: 53px;
     position: relative;
     width: 100%;
-    height: 200px;
     background-color: rgb(36, 36, 36);
 }
 .projectsdiv {
@@ -162,6 +201,12 @@ body {
     height: 100%;
     background-color: rgb(36, 36, 36);
     left: 50%;
+}
+.projects_content {
+    width: 100%;
+    background-color: yellow;
+    height: 200px;
+    margin-bottom: 200px;
 }
 .text {
     position: absolute;
