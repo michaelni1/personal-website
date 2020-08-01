@@ -73,6 +73,9 @@ body {
     transition: 1s ease;
 }
 #about_div {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -80,6 +83,9 @@ body {
     margin-top: 166px;
 }
 .boutme_transit {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -87,6 +93,9 @@ body {
     float: left;
 }
 .boutme2_transit {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -95,6 +104,9 @@ body {
     float: left;
 }
 .about_content {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -118,12 +130,18 @@ body {
     font-size: 125%;
 }
 #resume_div {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: relative;
     width: 100%;
     background-color: rgb(28, 28, 28);
     overflow: hidden;
 }
 .resume_transit {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -131,6 +149,9 @@ body {
     float: left;
 }
 .resume2_transit {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -140,6 +161,9 @@ body {
 }
 .resume_content {
     margin-bottom: 50px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 iframe {
     margin: 0 auto;
