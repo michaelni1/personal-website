@@ -119,6 +119,7 @@ $('.projects_transit').click(function() {
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
     $('#projects_div').css('height', '');
+    $('.projects_content').css('margin-bottom', '200px');
 });
 
 $('.projects2_transit').click(function() {
@@ -127,6 +128,7 @@ $('.projects2_transit').click(function() {
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
     $('#projects_div').css('height', '');
+    $('.projects_content').css('margin-bottom', '200px');
 });
 
 $('.projects_hide').click(function() {
@@ -135,6 +137,7 @@ $('.projects_hide').click(function() {
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
     $('#projects_div').css('height', '');
+    $('.projects_content').css('margin-bottom', '200px');
 });
 
 $('.nav-item_bout').click(function() {

@@ -81,14 +81,14 @@ body {
 }
 .boutme_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(22, 22, 22);
     float: left;
 }
 .boutme2_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(22, 22, 22);
     left: 50%;
@@ -125,14 +125,14 @@ body {
 }
 .resume_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(28, 28, 28);
     float: left;
 }
 .resume2_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(28, 28, 28);
     left: 50%;
@@ -155,14 +155,14 @@ iframe {
 }
 .interests_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(32, 32, 32);
     float: left;
 }
 .interests2_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(32, 32, 32);
     left: 50%;
@@ -187,21 +187,18 @@ iframe {
 }
 .projects_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(36, 36, 36);
     float: left;
 }
 .projects2_transit {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(36, 36, 36);
     left: 50%;
     float: left;
-}
-.projects_content {
-    margin-bottom: 200px;
 }
 .text {
     position: absolute;
