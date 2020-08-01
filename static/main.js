@@ -1,26 +1,44 @@
 $(window).on('load', function() {
     $('.first_load').hide();
+}); 
+
+$.ajaxSetup({
+    async: false
 });
 
 function display_space() {
     $('.next_box').show();
-    $('.next_box').css('right', '1px');
     rand_obj = Math.floor(Math.random() * 39);
-    link_extend = '/_get_image/' + rand_obj.toString();
-    $.getJSON($SCRIPT_ROOT + link_extend, function(data) {
-        $(document).ready(function() {
-            let img_src = data.image_link;
-            let img = new Image();
-            img.onload = function() {
-                $('.next_box').hide();
-                $('.next_box').css('right', '');
-                $('body').css('background-image', 'url(' + img.src + ')');
-            };
-            img.src = img_src;
-        });
-        $('#title_here').attr('href', data.link);
-        $('#title_here').text(data.title);
-    });
+
+    link_extend = '/_get_asset/' + rand_obj.toString();
+    $.getJSON($SCRIPT_ROOT + link_extend, callback);
+    
+    function callback(asset_id) {
+        var url = 'https://images-api.nasa.gov/asset/' + asset_id;
+        const proxyurl = 'https://tranquil-reaches-81640.herokuapp.com/';
+        img_url = 'https://images.nasa.gov/details-' + asset_id;
+        
+        fetch(proxyurl + 'https://images-assets.nasa.gov/image/' + asset_id + '/metadata.json')
+        .then(response => response.json())
+        .then(title_data => {
+            $('#title_here').text(title_data['AVAIL:Title']);
+        })
+
+        fetch(proxyurl + url)
+        .then(response => response.json())
+        .then(data => {
+            $(document).ready(function() {
+                let img_src = data['collection']['items'][0]['href'];
+                let img = new Image();
+                img.onload = function() {
+                    $('body').css('background-image', 'url(' + img.src + ')');
+                    $('.next_box').hide();
+                };
+                img.src = img_src;
+            });
+            $('#title_here').attr('href', img_url);
+        })
+    }
 };
 
 $('.boutme_transit').click(function() {

@@ -1,23 +1,19 @@
 <!DOCTYPE html>
+
 <html>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
-    <style>
-        .test {
-            margin-top: 200px;
-            background-color: red;
-        }
-        .child {
-            height: 500px;
-        }
-    </style>
     <head>
+        <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
-        <script type=text/javascript src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
     </head>
     <body>
-        <div class="test">
-            <div class="child"></div>
-        </div>
+        <p id="demo"></p>
+        <script type=text/javascript>
+            const proxyurl = "https://tranquil-reaches-81640.herokuapp.com/";
+            const url = "https://images-api.nasa.gov/asset/PIA03149";
+            fetch(proxyurl + url)
+            .then(response => response.text())
+            .then(contents => document.getElementById("demo").innerHTML = contents)
+        </script>
     </body>
 </html>
