@@ -1,9 +1,10 @@
 from flask import Flask, redirect, url_for, request, render_template, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import requests, json
 
 app = Flask(__name__)
-CORS(app)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 #class to store image info
 class Image:
@@ -45,22 +46,23 @@ def get_space_img(position):
    result = Image(title, img_link, link)
    return result
 
-@app.route('/_get_image/<int:im_num>')
+@cross_origin()
+@app.route('/_get_image/<int:im_num>', methods=['GET'])
 def send_space_img(im_num):
    space_img = get_space_img(im_num)
-   response = jsonify(image_link=space_img.image_link, title=space_img.image_title, link=space_img.link)
-   response.headers.add('Access-Control-Allow-Origin', '*')
-   return response
+   return jsonify(image_link=space_img.image_link, title=space_img.image_title, link=space_img.link)
 
 @app.route('/_get_painting/<int:im_num>')
 def get_painting(im_num):
    painting = get_img(im_num)
    return jsonify(image_link=painting.image_link, title=painting.image_title, link=painting.link)
 
+@cross_origin()
 @app.route('/')
 def index():
    return render_template('index.html')
 
+@cross_origin()
 @app.route('/main')
 def main():
    return render_template('main.html')
