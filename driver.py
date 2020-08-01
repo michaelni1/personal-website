@@ -48,7 +48,9 @@ def get_space_img(position):
 @app.route('/_get_image/<int:im_num>')
 def send_space_img(im_num):
    space_img = get_space_img(im_num)
-   return jsonify(image_link=space_img.image_link, title=space_img.image_title, link=space_img.link)
+   response = jsonify(image_link=space_img.image_link, title=space_img.image_title, link=space_img.link)
+   response.headers.add('Access-Control-Allow-Origin', '*')
+   return response
 
 @app.route('/_get_painting/<int:im_num>')
 def get_painting(im_num):
