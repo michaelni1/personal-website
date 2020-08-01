@@ -34,7 +34,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: no-repeat center center fixed;
+    background: no-repeat center center;
     background-image: url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~orig.jpg');
     background-color: rgb(0, 0, 0);
     -webkit-background-size: cover;

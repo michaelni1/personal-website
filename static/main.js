@@ -127,8 +127,8 @@ $('.projects2_transit').click(function() {
     $('.projects_transit').hide('slide', {direction:'left'}, 450);
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
-    $('#projects_div').css('height', '');
     $('.projects_content').css('margin-bottom', '200px');
+    $('#projects_div').css('height', '');
 });
 
 $('.projects_hide').click(function() {
@@ -136,8 +136,8 @@ $('.projects_hide').click(function() {
     $('.projects_transit').hide('slide', {direction:'left'}, 450);
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
-    $('#projects_div').css('height', '');
     $('.projects_content').css('margin-bottom', '200px');
+    $('#projects_div').css('height', '');
 });
 
 $('.nav-item_bout').click(function() {
@@ -169,5 +169,6 @@ $('.nav-item_pro').click(function() {
     $('.projects_transit').hide('slide', {direction:'left'}, 450);
     $('.projects2_transit').hide('slide', {direction:'right'}, 450);
     $('.projects_hide').hide();
+    $('.projects_content').css('margin-bottom', '200px');
     $('#projects_div').css('height', '');
 })
