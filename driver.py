@@ -63,6 +63,10 @@ def index():
 def main():
    return render_template('main.html')
 
+@app.route('/connect4')
+def connect4():
+   return render_template('connect4.html')
+
 @app.route('/test')
 def test():
    return render_template('test.html')

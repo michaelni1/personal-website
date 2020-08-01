@@ -46,13 +46,14 @@
             <a href="https://images.nasa.gov/details-PIA12348" id="title_here">
                 Great Observatories' Unique Views of the Milky Way</a>
         </div>
-        <input type="button" value="Random Space Picture" onclick="display_space()"/>
-        <div id="about_div" style="height: 200px"><br><br>
+        <input type="button" value="Random Space Picture" class="random_btn" onclick="display_space()"/>
+        <div id="about_div" style="height: 200px">
             <a class="anchor" id="about"></a>
             <div class="boutme_transit"></div>
             <div class="boutme2_transit"></div>
             <div class="text"><p class="boutme_hide">A little bit about me...</p></div>
             <div class="about_content">
+                <div class="headers">About</div><br><br>
                 <div class="about_pic"></div>
                 <div class="about_text">
                     <p class="about_text2">
@@ -61,36 +62,54 @@
                         I'm excited to see what lies ahead!
                     </p>
                 </div>
-            </div><br><br>
+            </div>
         </div>
-        <div id="resume_div" style="height: 200px"><br><br>
+        <div id="resume_div" style="height: 200px">
             <a class="anchor" id="resume"></a>
             <div class="resume_transit"></div>
             <div class="resume2_transit"></div>
             <div class="text"><p class="resume_hide">My resume</p></div>
             <div class="resume_content">
+                <div class="headers">Resume</div><br><br>
                 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSgRS9O_Y3o_wf48HETQFXUKpzVhoQLIlc50PMnmF--rJiJhapCh2rQKlzAet4rAQB7KdPXYH9m8RR_/pub?embedded=true"></iframe>
-            </div><br><br>
+            </div>
         </div>
-        <div id="interests_div" style="height: 200px"><br><br>
+        <div id="interests_div" style="height: 200px">
             <a class="anchor" id="interests"></a>
             <div class="interests_transit"></div>
             <div class="interests2_transit"></div>
             <div class="text"><p class="interests_hide">My interests & passions</p></div>
             <div class="interests_text">
-                <p class="interests_text2">
-                    Hi! I'm Michael. I'm native to Middletown, New Jersey, and I currently study computer science and 
-                    cognitive science at the University of Michigan--Ann Arbor. It's been quite a journey so far, and 
-                    I'm excited to see what lies ahead!
-                </p>
-            </div><br><br>
+                <div class="headers">Interests</div><br><br>
+                <ul class="interests_text2">
+                    <li>Technology: Literally everything about it. It's incredible that people in cities and towns in every country
+                        on Earth are connected by the same websites, electronics, and operating systems. The characters "www." form 
+                        such an iconic part of the human experience, and I'm grateful to be able to study something so transformative 
+                        and powerful.
+                    </li><br>
+                    <li>The social sciences: Anything psychology, sociology, law, political science, cognitive science, etc. How do we 
+                        live together as we get closer together? In what ways is a mind like a computer and what are the implications?
+                        What are our heuristics and biases? So many questions, so little time. And what's exciting is that technology 
+                        continues to frame the way we understand and answer these issues.
+                    </li><br>
+                    <li>Running, cooking, building programs and websites: Just amazing and wonderful.
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="projects_div" style="height: 200px"><br><br>
+        <div id="projects_div" style="height: 200px">
             <a class="anchor" id="projects"></a>
             <div class="projects_transit"></div>
             <div class="projects2_transit"></div>
-            <div class="text"><p class="projects_hide">My projects (more to come!)</p></div>
-            <div class="projects_content"></div>
+            <div class="text"><p class="projects_hide">My projects</p></div>
+            <div class="projects_content">
+                <div class="headers">Projects</div><br><br>
+                <div class="connect4">
+                    <a href="{{ url_for('connect4') }}"><img src="{{ url_for('static',filename='img/connect4.png') }}"
+                        style="height: 200px; width: 200px"></a>
+                    <p class="connect4_text">The game Connect 4</p>
+                </div>
+            </div>
         </div>
         <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>

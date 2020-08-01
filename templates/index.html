@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Welcome!</title>
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/index.css') }}">
         <script type=text/javascript>
             $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
             main_url = "{{ url_for('main') }}"
@@ -26,7 +26,7 @@
         </div>
         <input type="button" value="Random Artwork" onclick="display_painting();"/>
         <div class="next_box" style="display: none">
-            <img class="loading" src="{{ url_for('static',filename='img/load_gif.gif') }}">
+            <img class="loading" src="{{ url_for('static', filename='img/load_gif.gif') }}">
         </div>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
         <script type=text/javascript src="{{ url_for('static', filename='index.js') }}"></script>
