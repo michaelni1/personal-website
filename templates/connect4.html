@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 
 <html>
-    hello
+    <head>
+        <title>Connect 4</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/connect4.css') }}">
+    </head>
+    <body>
+        <div class="board">
+            <div class="row">
+                <div class="00 board_piece">
+                    <img src="/static/img/board_piece.png">
+                </div>
+            </div>
+        </div>
+        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <!-- <script type=text/javascript src="{{ url_for('static', filename='connect4.js') }}"></script> -->
+    </body>
 </html>

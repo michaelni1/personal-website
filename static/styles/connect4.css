@@ -1,0 +1,20 @@
+body {
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.board {
+
+}
+.row {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: red;
+}
+.board_piece {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}

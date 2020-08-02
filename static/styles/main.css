@@ -4,7 +4,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 1000;
+    z-index: 1;
     background-color: rgb(0, 0, 0);
 }
 .loading {
@@ -34,7 +34,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: no-repeat center center;
+    background: no-repeat center center fixed;
     background-image: url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~orig.jpg');
     background-color: rgb(0, 0, 0);
     -webkit-background-size: cover;
@@ -42,7 +42,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    padding: 0;
     overflow-x: hidden;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -73,9 +72,6 @@ body {
     transition: 1s ease;
 }
 #about_div {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -83,9 +79,6 @@ body {
     margin-top: 166px;
 }
 .boutme_transit {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -93,9 +86,6 @@ body {
     float: left;
 }
 .boutme2_transit {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -104,9 +94,6 @@ body {
     float: left;
 }
 .about_content {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -130,18 +117,12 @@ body {
     font-size: 125%;
 }
 #resume_div {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: relative;
     width: 100%;
     background-color: rgb(28, 28, 28);
     overflow: hidden;
 }
 .resume_transit {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -149,9 +130,6 @@ body {
     float: left;
 }
 .resume2_transit {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     position: absolute;
     width: 60%;
     height: 100%;
@@ -161,9 +139,6 @@ body {
 }
 .resume_content {
     margin-bottom: 50px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
 }
 iframe {
     margin: 0 auto;
