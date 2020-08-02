@@ -116,21 +116,20 @@ body {
     font-size: 125%;
 }
 #resume_div {
-    position: relative;
     background-color: rgb(28, 28, 28);
     overflow: hidden;
 }
 .resume_transit {
     position: absolute;
     width: 60%;
-    height: 100%;
+    height: 310px;
     background-color: rgb(28, 28, 28);
     float: left;
 }
 .resume2_transit {
     position: absolute;
     width: 60%;
-    height: 100%;
+    height: 310px;
     background-color: rgb(28, 28, 28);
     left: 50%;
     float: left;
@@ -251,4 +250,7 @@ p {
     font-size: 190%;
     text-align: center;
     text-decoration: underline;
+}
+.resume_hide {
+    margin-top: 250px;
 }
