@@ -42,13 +42,10 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
     padding-top: 210px;
     width: 100%;
     overflow-x: hidden;
+    position: absolute;
 }
 #title_here {
     color: white;
