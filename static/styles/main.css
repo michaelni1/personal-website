@@ -183,6 +183,7 @@ iframe {
     text-align: center;
     width: 100%;
     background-color: rgb(36, 36, 36);
+    height: 300px;
 }
 .projects_transit {
     width: 50%;
@@ -240,13 +241,10 @@ p {
     width: 100%;
 }
 .connect4 {
-    position: absolute;
     left: 0;
     right: 0;
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 200px;
-    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 .connect4_text {

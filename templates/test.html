@@ -7,13 +7,10 @@
         <script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
     </head>
     <body>
-        <p id="demo"></p>
-        <script type=text/javascript>
-            const proxyurl = "https://tranquil-reaches-81640.herokuapp.com/";
-            const url = "https://images-api.nasa.gov/asset/PIA03149";
-            fetch(proxyurl + url)
-            .then(response => response.text())
-            .then(contents => document.getElementById("demo").innerHTML = contents)
+        <div class="connect4">
+            <a href="{{ url_for('connect4') }}"><img src="{{ url_for('static',filename='img/connect4.png') }}" style="height: 200px; width: 200px"/></a>
+            <p class="connect4_text">The game Connect 4</p>
+        </div>
         </script>
     </body>
 </html>
