@@ -4,7 +4,7 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 1000;
     background-color: rgb(0, 0, 0);
 }
 .loading {
@@ -45,7 +45,6 @@ body {
     padding-top: 210px;
     width: 100%;
     overflow-x: hidden;
-    position: absolute;
 }
 #title_here {
     color: white;
@@ -73,28 +72,27 @@ body {
 #about_div {
     position: relative;
     width: 100%;
-    overflow: hidden;
     background-color: rgb(22, 22, 22);
     margin-top: 166px;
+    text-align: center;
+    height: 300px;
 }
 .boutme_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(22, 22, 22);
     float: left;
 }
 .boutme2_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(22, 22, 22);
     left: 50%;
     float: left;
 }
 .about_content {
+    position: absolute;
     width: 100%;
-    margin-bottom: 50px;
 }
 .about_pic {
     margin: 0 auto;
@@ -116,26 +114,29 @@ body {
     font-size: 125%;
 }
 #resume_div {
+    position: relative;
+    text-align: center;
+    width: 100%;
     background-color: rgb(28, 28, 28);
-    overflow: hidden;
+    height: 300px;
 }
 .resume_transit {
-    position: absolute;
-    width: 60%;
-    height: 310px;
+    width: 50%;
+    height: 300px;
     background-color: rgb(28, 28, 28);
     float: left;
 }
 .resume2_transit {
-    position: absolute;
-    width: 60%;
-    height: 310px;
+    width: 50%;
+    height: 300px;
     background-color: rgb(28, 28, 28);
     left: 50%;
     float: left;
 }
 .resume_content {
+    position: absolute;
     margin-bottom: 50px;
+    width: 100%;
 }
 iframe {
     margin: 0 auto;
@@ -145,29 +146,31 @@ iframe {
 }
 #interests_div {
     position: relative;
+    text-align: center;
     width: 100%;
     background-color: rgb(32, 32, 32);
-    overflow: hidden;
+    height: 300px;
 }
 .interests_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(32, 32, 32);
     float: left;
 }
 .interests2_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(32, 32, 32);
     left: 50%;
     float: left;
 }
 .interests_text {
-    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: absolute;
     max-width: 1000px;
-    margin-bottom: 50px;
 }
 .interests_text2 {
     color: white;
@@ -177,30 +180,28 @@ iframe {
 }
 #projects_div {
     position: relative;
+    text-align: center;
     width: 100%;
     background-color: rgb(36, 36, 36);
-    overflow: hidden;
 }
 .projects_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(36, 36, 36);
     float: left;
 }
 .projects2_transit {
-    position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 300px;
     background-color: rgb(36, 36, 36);
     left: 50%;
     float: left;
 }
 .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 300px;
+    z-index: 5;
 }
 input[type=button] {
     position: relative;
@@ -230,8 +231,20 @@ p {
     font-size: 230%;
     margin: 0;
 }
+.projects_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 .connect4 {
-    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
     width: 200px;
     height: 200px;
     text-align: center;
@@ -250,12 +263,4 @@ p {
     font-size: 190%;
     text-align: center;
     text-decoration: underline;
-}
-.resume_hide {
-    margin-top: 250px;
-}
-*
-{
-    margin: 0px;
-    padding: 0px;
 }
