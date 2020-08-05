@@ -125,7 +125,6 @@ $('#projects_div').click(function() {
         $('.projects2_transit').hide('slide', {direction:'right'}, 1000);
         $('#projects_div').css('margin-bottom', '300px');
         $('#projects_div').css('overflow', 'visible');
-        $('#projects_div').css('pointer-events', 'none');
         executed = true;
     }
 });
@@ -140,7 +139,6 @@ $('.projects_hide').click(function() {
         $('.projects2_transit').hide('slide', {direction:'right'}, 1000);
         $('#projects_div').css('margin-bottom', '300px');
         $('#projects_div').css('overflow', 'visible');
-        $('#projects_div').css('pointer-events', 'none');
         executed = true;
     }
 });

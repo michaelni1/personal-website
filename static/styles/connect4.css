@@ -1,20 +1,67 @@
 body {
-    padding-top: 75px;
-    padding-left: 75px;
-    padding-right: 75px;
+    background: rgb(82, 175, 82);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .board {
-
+    margin: 0 auto;
+    height: 570px;
+    width: 655px;
+    background-color: rgb(136, 136, 218);
+    border: 20px solid rgb(47, 156, 47);
+    margin-bottom: 5px;
+}
+.top_board {
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 90px;
+    width: 655px;
+}
+.board_col {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
 }
 .row {
-    width: 1300px;
-    margin: 0 auto;
-    background-color: red;
+    width: 655px;
+    height: 94px;
+}
+.col {
+    position: relative; 
+    display: inline-block; 
+    width: 90px;
+    height: 90px;
+}
+.top_piece_red {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+.top_piece_yellow {
+    position: absolute;
+    width: 90px;
+    height: 90px;
 }
 .board_piece {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+    width: 90px;
+    height: 90px;
+}
+input[type=button] {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+}
+input[type=button]:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5 ease;
 }

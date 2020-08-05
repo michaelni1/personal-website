@@ -5,15 +5,266 @@
         <title>Connect 4</title>
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/connect4.css') }}">
     </head>
+
     <body>
-        <div class="board">
-            <div class="row">
-                <div class="00 board_piece">
-                    <img src="/static/img/board_piece.png">
+        <div class="c4">
+            <div class="top_board">
+                <div class="col col0">
+                    <img src="/static/img/red_piece.png" class="col0_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col0_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col1">
+                    <img src="/static/img/red_piece.png" class="col1_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col1_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col2">
+                    <img src="/static/img/red_piece.png" class="col2_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col2_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col3">
+                    <img src="/static/img/red_piece.png" class="col3_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col3_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col4">
+                    <img src="/static/img/red_piece.png" class="col4_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col4_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col5">
+                    <img src="/static/img/red_piece.png" class="col5_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col5_yellow top_piece_yellow" style="display: none">
+                </div>
+                <div class="col col6">
+                    <img src="/static/img/red_piece.png" class="col6_red top_piece_red" style="display: none">
+                    <img src="/static/img/yellow_piece.png" class="col6_yellow top_piece_yellow" style="display: none">
+                </div>
+            </div>
+            <div class="board">
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 00_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 00_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 00_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 01_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 01_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 01_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 02_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 02_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 02_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 03_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 03_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 03_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 04_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 04_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 04_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 05_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 05_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 05_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 06_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 06_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 06_yellow" style="display: none">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 10_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 10_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 10_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 11_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 11_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 11_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 12_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 12_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 12_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 13_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 13_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 13_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 14_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 14_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 14_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 15_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 15_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 15_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 16_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 16_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 16_yellow" style="display: none">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 20_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 20_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 20_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 21_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 21_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 21_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 22_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 22_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 22_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 23_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 23_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 23_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 24_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 24_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 24_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 25_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 25_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 25_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 26_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 26_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 26_yellow" style="display: none">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 30_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 30_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 30_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 31_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 31_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 31_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 32_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 32_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 32_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 33_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 33_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 33_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 34_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 34_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 34_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 35_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 35_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 35_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 36_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 36_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 36_yellow" style="display: none">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 40_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 40_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 40_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 41_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 41_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 41_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 42_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 42_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 42_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 43_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 43_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 43_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 44_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 44_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 44_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 45_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 45_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 45_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 46_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 46_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 46_yellow" style="display: none">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col0 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 50_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 50_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 50_yellow" style="display: none">
+                    </div>
+                    <div class="col1 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 51_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 51_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 51_yellow" style="display: none">
+                    </div>
+                    <div class="col2 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 52_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 52_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 52_yellow" style="display: none">
+                    </div>
+                    <div class="col3 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 53_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 53_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 53_yellow" style="display: none">
+                    </div>
+                    <div class="col4 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 54_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 54_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 54_yellow" style="display: none">
+                    </div>
+                    <div class="col5 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 55_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 55_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 55_yellow" style="display: none">
+                    </div>
+                    <div class="col6 board_col">
+                        <img src="/static/img/board_piece.png" class="board_piece 56_board">
+                        <img src="/static/img/red_piece.png" class="top_piece_red 56_red" style="display: none">
+                        <img src="/static/img/yellow_piece.png" class="top_piece_yellow 56_yellow" style="display: none">
+                    </div>
                 </div>
             </div>
         </div>
+        <input type="button" value="Reset Board" onclick="reset_board()"/>
         <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
-        <!-- <script type=text/javascript src="{{ url_for('static', filename='connect4.js') }}"></script> -->
+        <script type=text/javascript src="{{ url_for('static', filename='connect4.js') }}"></script>
     </body>
 </html>

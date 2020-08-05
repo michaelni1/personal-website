@@ -23,11 +23,7 @@
     top: 0;
     left: 0;
     background: rgb(0, 0, 0);
-    transition: 0.35s;
-    -webkit-transition: 0.35s;
-    -moz-transition: 0.35s;
     position: fixed;
-    right: calc(100% - 0px);
     display: block;
 }
 html {
