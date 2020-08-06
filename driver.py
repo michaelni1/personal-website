@@ -27,27 +27,7 @@ def get_img(position):
    result = Image(painting['title'], painting['primaryImage'], painting['objectURL'])
    return result
 
-# def get_space_img(position):
-#    asset_id = all_images['objectIDs'][position]
-#    img_response = requests.get('https://images-api.nasa.gov/asset/' + asset_id)
-#    space_img = img_response.json()
-
-#    img_link = space_img['collection']['items'][0]['href']
-#    link = 'https://images.nasa.gov/details-' + asset_id
-
-#    title_request = space_img['collection']['items'][-1]['href']
-#    img_title_response = requests.get(title_request)
-#    img_dict = img_title_response.json()
-#    title = img_dict['AVAIL:Title']
-
-#    result = Image(title, img_link, link)
-#    return result
-
-# @app.route('/_get_image/<int:im_num>')
-# def send_space_img(im_num):
-#    space_img = get_space_img(im_num)
-#    return jsonify(image_link=space_img.image_link, title=space_img.image_title, link=space_img.link)
-
+#flask renders
 @app.route('/_get_asset/<int:a_num>')
 def get_asset(a_num):
    return jsonify(all_images['objectIDs'][a_num])
@@ -68,10 +48,6 @@ def main():
 @app.route('/connect4')
 def connect4():
    return render_template('connect4.html')
-
-@app.route('/test')
-def test():
-   return render_template('test.html')
 
 if __name__ == '__main__':
    app.run(debug=True)
