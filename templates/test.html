@@ -2,15 +2,50 @@
 
 <html>
     <head>
-        <script type=text/javascript>$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
-        <script type=text/javascript src="{{ url_for('static', filename='jquery.js') }}"></script>
-        <script type=text/javascript src="{{ url_for('static', filename='jquery-ui.js') }}"></script>
+        <meta charset="utf-8">
+        <title>Firebase web quickstart</title>
     </head>
+
     <body>
-        <div class="connect4">
-            <a href="{{ url_for('connect4') }}"><img src="{{ url_for('static',filename='img/connect4.png') }}" style="height: 200px; width: 200px"/></a>
-            <p class="connect4_text">The game Connect 4</p>
-        </div>
+        <h1 id="bigone"></h1>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCzxqEQEUdCji0_VaJywBYQZThYNjPH1xQ",
+            authDomain: "personal-website-e3d9b.firebaseapp.com",
+            databaseURL: "https://personal-website-e3d9b.firebaseio.com",
+            projectId: "personal-website-e3d9b",
+            storageBucket: "personal-website-e3d9b.appspot.com",
+            messagingSenderId: "839915221319",
+            appId: "1:839915221319:web:8177488ccac17513b4dc62",
+            measurementId: "G-FG7XKB2JC7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        var bigone = document.getElementById('bigone');
+        var ref = firebase.database().ref();
+
+        ref.child('test').on('value', function(snapshot) {
+            document.getElementById('bigone').innerHTML = snapshot.val();
+        })
+
+        // ref.update({'00': ' '})
+        // var test = '';
+        // ref.child('prev_shown_piece').on('value', function(snapchat) {
+        //     test = snapchat.val();
+        // })
+        // console.log(test);
         </script>
     </body>
 </html>
