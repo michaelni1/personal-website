@@ -803,9 +803,8 @@ $('.col0').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col1').hover(function() {
@@ -814,9 +813,8 @@ $('.col1').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col2').hover(function() {
@@ -825,9 +823,8 @@ $('.col2').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col3').hover(function() {
@@ -836,9 +833,8 @@ $('.col3').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col4').hover(function() {
@@ -847,9 +843,8 @@ $('.col4').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col5').hover(function() {
@@ -858,9 +853,8 @@ $('.col5').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
 
 $('.col6').hover(function() {
@@ -869,7 +863,6 @@ $('.col6').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
-    }).then(function() {
-        ref.update({'cur_position': [combined]});
     })
+    ref.update({'cur_position': [combined]});
 })
