@@ -365,13 +365,13 @@ ref.child('56').on('value', function(snapshot) {
     $(snapshot.val().toString()).css('display', '');
 })
 
-function check_win(row, col, win_color) {
+async function check_win(row, col, win_color) {
     let piece_count = 1;
     let start_row = row;
     let start_col = col;
 
     //check up for same color pieces
-    while (row > 0 && piece_count != 4) {
+    while (row > 0 && piece_count < 4) {
         --row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -390,7 +390,7 @@ function check_win(row, col, win_color) {
     //reset row
     row = start_row;
     //check down for same color pieces
-    while (row < 5 && piece_count != 4) {
+    while (row < 5 && piece_count < 4) {
         ++row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -407,7 +407,7 @@ function check_win(row, col, win_color) {
         }
     }
     //check if up down wins
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -417,7 +417,7 @@ function check_win(row, col, win_color) {
     //reset
     row = start_row;
     //check right
-    while (col < 6 && piece_count != 4) {
+    while (col < 6 && piece_count < 4) {
         ++col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -435,7 +435,7 @@ function check_win(row, col, win_color) {
     }
     col = start_col;
     //check left
-    while (col > 0 && piece_count != 4) {
+    while (col > 0 && piece_count < 4) {
         --col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -451,7 +451,7 @@ function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -460,7 +460,7 @@ function check_win(row, col, win_color) {
     }
     col = start_col
     //check upper left diagonal
-    while (row > 0 && col > 0) {
+    while (row > 0 && col > 0 && piece_count < 4) {
         --row;
         --col;
         let to_break = false;
@@ -480,7 +480,7 @@ function check_win(row, col, win_color) {
     row = start_row
     col = start_col
     //check lower right diagonal
-    while (row < 5 && col < 6) {
+    while (row < 5 && col < 6 && piece_count < 4) {
         ++row;
         ++col;
         let to_break = false;
@@ -499,7 +499,7 @@ function check_win(row, col, win_color) {
     }
     row = start_row
     col = start_col
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -507,7 +507,7 @@ function check_win(row, col, win_color) {
         piece_count = 1;
     }
     //check upper right diagonal
-    while (row > 0 && col < 6) {
+    while (row > 0 && col < 6 && piece_count < 4) {
         --row;
         ++col;
         let to_break = false;
@@ -527,7 +527,7 @@ function check_win(row, col, win_color) {
     row = start_row
     col = start_col
     //check lower left diagonal
-    while (row < 5 && col > 0) {
+    while (row < 5 && col > 0 && piece_count < 4) {
         ++row;
         --col;
         let to_break = false;
@@ -544,7 +544,7 @@ function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         setTimeout(function() {
             alert(win_color + ' wins!!');
         }, 100)
@@ -560,7 +560,7 @@ function reset_board() {
 }
 
 $('.col0').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -580,8 +580,8 @@ $('.col0').click(function() {
             if (cur_row != -1) {
                 let to_update = cur_row.toString() + '0';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                check_win(cur_row, 0, cur_color);
+                
+                await check_win(cur_row, 0, cur_color);
 
                 let combined = '.col0_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -594,7 +594,7 @@ $('.col0').click(function() {
 })
 
 $('.col1').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -615,7 +615,7 @@ $('.col1').click(function() {
                 let to_update = cur_row.toString() + '1';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 1, cur_color);
+                await check_win(cur_row, 1, cur_color);
 
                 let combined = '.col1_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -628,7 +628,7 @@ $('.col1').click(function() {
 })
 
 $('.col2').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -649,7 +649,7 @@ $('.col2').click(function() {
                 let to_update = cur_row.toString() + '2';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 2, cur_color);
+                await check_win(cur_row, 2, cur_color);
 
                 let combined = '.col2_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -662,7 +662,7 @@ $('.col2').click(function() {
 })
 
 $('.col3').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -683,7 +683,7 @@ $('.col3').click(function() {
                 let to_update = cur_row.toString() + '3';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 3, cur_color);
+                await check_win(cur_row, 3, cur_color);
 
                 let combined = '.col3_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -696,7 +696,7 @@ $('.col3').click(function() {
 })
 
 $('.col4').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -717,7 +717,7 @@ $('.col4').click(function() {
                 let to_update = cur_row.toString() + '4';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 4, cur_color);
+                await check_win(cur_row, 4, cur_color);
 
                 let combined = '.col4_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -730,7 +730,7 @@ $('.col4').click(function() {
 })
 
 $('.col5').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -751,7 +751,7 @@ $('.col5').click(function() {
                 let to_update = cur_row.toString() + '5';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 5, cur_color);
+                await check_win(cur_row, 5, cur_color);
 
                 let combined = '.col5_' + cur_color;
                 ref.update({'to_hide': [combined]})
@@ -764,7 +764,7 @@ $('.col5').click(function() {
 })
 
 $('.col6').click(function() {
-    ref.child('has_won').once('value', function(snapshot) {
+    ref.child('has_won').once('value', async function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -785,7 +785,7 @@ $('.col6').click(function() {
                 let to_update = cur_row.toString() + '6';
                 ref.update({[to_update]: '.' + to_update + '_' + cur_color});
 
-                check_win(cur_row, 6, cur_color);
+                await check_win(cur_row, 6, cur_color);
 
                 let combined = '.col6_' + cur_color;
                 ref.update({'to_hide': [combined]})
