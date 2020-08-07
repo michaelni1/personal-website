@@ -49,6 +49,9 @@ ref.child('reset').on('value', function(snapshot) {
         $('.board_piece').show();
         $('body').css('background', 'rgb(82, 175, 82)');
         ref.update({'has_won': 'false'});
+        ref.update({'to_hide': ''});
+        ref.update({'cur_position': '.col0_red'});
+        ref.update({'prev_shown_piece': '.col0_red'});
         cur_color = 'red';
         ref.update({'reset': 'false'});
     }
