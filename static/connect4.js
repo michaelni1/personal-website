@@ -1,7 +1,3 @@
-$(window).on('load', function() {
-    $('.col0_red').show();
-});
-
 var firebaseConfig = {
     apiKey: "AIzaSyCzxqEQEUdCji0_VaJywBYQZThYNjPH1xQ",
     authDomain: "personal-website-e3d9b.firebaseapp.com",
