@@ -76,6 +76,7 @@ ref.child('00').on('value', function(snapshot) {
         $('.00_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('01').on('value', function(snapshot) {
@@ -83,6 +84,7 @@ ref.child('01').on('value', function(snapshot) {
         $('.01_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('02').on('value', function(snapshot) {
@@ -90,6 +92,7 @@ ref.child('02').on('value', function(snapshot) {
         $('.02_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('03').on('value', function(snapshot) {
@@ -97,6 +100,7 @@ ref.child('03').on('value', function(snapshot) {
         $('.03_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('04').on('value', function(snapshot) {
@@ -104,6 +108,7 @@ ref.child('04').on('value', function(snapshot) {
         $('.04_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('05').on('value', function(snapshot) {
@@ -111,6 +116,7 @@ ref.child('05').on('value', function(snapshot) {
         $('.05_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('06').on('value', function(snapshot) {
@@ -118,6 +124,7 @@ ref.child('06').on('value', function(snapshot) {
         $('.06_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('10').on('value', function(snapshot) {
@@ -125,6 +132,7 @@ ref.child('10').on('value', function(snapshot) {
         $('.10_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('11').on('value', function(snapshot) {
@@ -132,6 +140,7 @@ ref.child('11').on('value', function(snapshot) {
         $('.11_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('12').on('value', function(snapshot) {
@@ -139,6 +148,7 @@ ref.child('12').on('value', function(snapshot) {
         $('.12_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('13').on('value', function(snapshot) {
@@ -146,6 +156,7 @@ ref.child('13').on('value', function(snapshot) {
         $('.13_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('14').on('value', function(snapshot) {
@@ -153,6 +164,7 @@ ref.child('14').on('value', function(snapshot) {
         $('.14_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('15').on('value', function(snapshot) {
@@ -160,6 +172,7 @@ ref.child('15').on('value', function(snapshot) {
         $('.15_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('16').on('value', function(snapshot) {
@@ -167,6 +180,7 @@ ref.child('16').on('value', function(snapshot) {
         $('.16_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('20').on('value', function(snapshot) {
@@ -174,6 +188,7 @@ ref.child('20').on('value', function(snapshot) {
         $('.20_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('21').on('value', function(snapshot) {
@@ -181,6 +196,7 @@ ref.child('21').on('value', function(snapshot) {
         $('.21_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('22').on('value', function(snapshot) {
@@ -188,6 +204,7 @@ ref.child('22').on('value', function(snapshot) {
         $('.22_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('23').on('value', function(snapshot) {
@@ -195,6 +212,7 @@ ref.child('23').on('value', function(snapshot) {
         $('.23_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('24').on('value', function(snapshot) {
@@ -202,6 +220,7 @@ ref.child('24').on('value', function(snapshot) {
         $('.24_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('25').on('value', function(snapshot) {
@@ -209,6 +228,7 @@ ref.child('25').on('value', function(snapshot) {
         $('.25_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('26').on('value', function(snapshot) {
@@ -216,6 +236,7 @@ ref.child('26').on('value', function(snapshot) {
         $('.26_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('30').on('value', function(snapshot) {
@@ -223,6 +244,7 @@ ref.child('30').on('value', function(snapshot) {
         $('.30_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('31').on('value', function(snapshot) {
@@ -230,6 +252,7 @@ ref.child('31').on('value', function(snapshot) {
         $('.31_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('32').on('value', function(snapshot) {
@@ -237,6 +260,7 @@ ref.child('32').on('value', function(snapshot) {
         $('.32_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('33').on('value', function(snapshot) {
@@ -244,6 +268,7 @@ ref.child('33').on('value', function(snapshot) {
         $('.33_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('34').on('value', function(snapshot) {
@@ -251,6 +276,7 @@ ref.child('34').on('value', function(snapshot) {
         $('.34_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('35').on('value', function(snapshot) {
@@ -258,6 +284,7 @@ ref.child('35').on('value', function(snapshot) {
         $('.35_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('36').on('value', function(snapshot) {
@@ -265,6 +292,7 @@ ref.child('36').on('value', function(snapshot) {
         $('.36_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('40').on('value', function(snapshot) {
@@ -272,6 +300,7 @@ ref.child('40').on('value', function(snapshot) {
         $('.40_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('41').on('value', function(snapshot) {
@@ -279,6 +308,7 @@ ref.child('41').on('value', function(snapshot) {
         $('.41_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('42').on('value', function(snapshot) {
@@ -286,6 +316,7 @@ ref.child('42').on('value', function(snapshot) {
         $('.42_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('43').on('value', function(snapshot) {
@@ -293,6 +324,7 @@ ref.child('43').on('value', function(snapshot) {
         $('.43_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('44').on('value', function(snapshot) {
@@ -300,6 +332,7 @@ ref.child('44').on('value', function(snapshot) {
         $('.44_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('45').on('value', function(snapshot) {
@@ -307,6 +340,7 @@ ref.child('45').on('value', function(snapshot) {
         $('.45_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('46').on('value', function(snapshot) {
@@ -314,6 +348,7 @@ ref.child('46').on('value', function(snapshot) {
         $('.46_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('50').on('value', function(snapshot) {
@@ -321,6 +356,7 @@ ref.child('50').on('value', function(snapshot) {
         $('.50_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('51').on('value', function(snapshot) {
@@ -328,6 +364,7 @@ ref.child('51').on('value', function(snapshot) {
         $('.51_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('52').on('value', function(snapshot) {
@@ -335,6 +372,7 @@ ref.child('52').on('value', function(snapshot) {
         $('.52_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('53').on('value', function(snapshot) {
@@ -342,6 +380,7 @@ ref.child('53').on('value', function(snapshot) {
         $('.53_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('54').on('value', function(snapshot) {
@@ -349,6 +388,7 @@ ref.child('54').on('value', function(snapshot) {
         $('.54_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('55').on('value', function(snapshot) {
@@ -356,6 +396,7 @@ ref.child('55').on('value', function(snapshot) {
         $('.55_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
 ref.child('56').on('value', function(snapshot) {
@@ -363,15 +404,16 @@ ref.child('56').on('value', function(snapshot) {
         $('.56_board').css('display', 'none');
     }
     $(snapshot.val().toString()).css('display', '');
+    cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
 })
 
-async function check_win(row, col, win_color) {
+function check_win(row, col, win_color) {
     let piece_count = 1;
     let start_row = row;
     let start_col = col;
 
     //check up for same color pieces
-    while (row > 0 && piece_count < 4) {
+    while (row > 0 && piece_count != 4) {
         --row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -390,7 +432,7 @@ async function check_win(row, col, win_color) {
     //reset row
     row = start_row;
     //check down for same color pieces
-    while (row < 5 && piece_count < 4) {
+    while (row < 5 && piece_count != 4) {
         ++row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -407,7 +449,7 @@ async function check_win(row, col, win_color) {
         }
     }
     //check if up down wins
-    if (piece_count >= 4) {
+    if (piece_count == 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -417,7 +459,7 @@ async function check_win(row, col, win_color) {
     //reset
     row = start_row;
     //check right
-    while (col < 6 && piece_count < 4) {
+    while (col < 6 && piece_count != 4) {
         ++col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -435,7 +477,7 @@ async function check_win(row, col, win_color) {
     }
     col = start_col;
     //check left
-    while (col > 0 && piece_count < 4) {
+    while (col > 0 && piece_count != 4) {
         --col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -451,7 +493,7 @@ async function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count >= 4) {
+    if (piece_count == 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -460,7 +502,7 @@ async function check_win(row, col, win_color) {
     }
     col = start_col
     //check upper left diagonal
-    while (row > 0 && col > 0 && piece_count < 4) {
+    while (row > 0 && col > 0) {
         --row;
         --col;
         let to_break = false;
@@ -480,7 +522,7 @@ async function check_win(row, col, win_color) {
     row = start_row
     col = start_col
     //check lower right diagonal
-    while (row < 5 && col < 6 && piece_count < 4) {
+    while (row < 5 && col < 6) {
         ++row;
         ++col;
         let to_break = false;
@@ -499,7 +541,7 @@ async function check_win(row, col, win_color) {
     }
     row = start_row
     col = start_col
-    if (piece_count >= 4) {
+    if (piece_count == 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -507,7 +549,7 @@ async function check_win(row, col, win_color) {
         piece_count = 1;
     }
     //check upper right diagonal
-    while (row > 0 && col < 6 && piece_count < 4) {
+    while (row > 0 && col < 6) {
         --row;
         ++col;
         let to_break = false;
@@ -527,7 +569,7 @@ async function check_win(row, col, win_color) {
     row = start_row
     col = start_col
     //check lower left diagonal
-    while (row < 5 && col > 0 && piece_count < 4) {
+    while (row < 5 && col > 0) {
         ++row;
         --col;
         let to_break = false;
@@ -544,7 +586,7 @@ async function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count >= 4) {
+    if (piece_count == 4) {
         setTimeout(function() {
             alert(win_color + ' wins!!');
         }, 100)
@@ -560,7 +602,7 @@ function reset_board() {
 }
 
 $('.col0').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -578,14 +620,15 @@ $('.col0').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '0';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-                
-                await check_win(cur_row, 0, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col0_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '0';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 0, prev_color);
+
                 combined = '.col0_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -594,7 +637,7 @@ $('.col0').click(function() {
 })
 
 $('.col1').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -612,14 +655,15 @@ $('.col1').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '1';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 1, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col1_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '1';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 1, prev_color);
+
                 combined = '.col1_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -628,7 +672,7 @@ $('.col1').click(function() {
 })
 
 $('.col2').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -646,14 +690,15 @@ $('.col2').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '2';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 2, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col2_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '2';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 2, prev_color);
+
                 combined = '.col2_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -662,7 +707,7 @@ $('.col2').click(function() {
 })
 
 $('.col3').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -680,14 +725,15 @@ $('.col3').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '3';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 3, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col3_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '3';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+                
+                check_win(cur_row, 3, prev_color);
+
                 combined = '.col3_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -696,7 +742,7 @@ $('.col3').click(function() {
 })
 
 $('.col4').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -714,14 +760,15 @@ $('.col4').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '4';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 4, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col4_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '4';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 4, prev_color);
+
                 combined = '.col4_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -730,7 +777,7 @@ $('.col4').click(function() {
 })
 
 $('.col5').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -748,14 +795,15 @@ $('.col5').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '5';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 5, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col5_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '5';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 5, prev_color);
+
                 combined = '.col5_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -764,7 +812,7 @@ $('.col5').click(function() {
 })
 
 $('.col6').click(function() {
-    ref.child('has_won').once('value', async function(snapshot) {
+    ref.child('has_won').once('value', function(snapshot) {
         if (snapshot.val() == 'false') {
             let cur_row = 5;
             let to_break = false;
@@ -782,14 +830,15 @@ $('.col6').click(function() {
                 }
             }
             if (cur_row != -1) {
-                let to_update = cur_row.toString() + '6';
-                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
-
-                await check_win(cur_row, 6, cur_color);
+                let prev_color = cur_color;
 
                 let combined = '.col6_' + cur_color;
                 ref.update({'to_hide': [combined]})
-                cur_color == 'red' ? cur_color = 'yellow' : cur_color = 'red';
+                let to_update = cur_row.toString() + '6';
+                ref.update({[to_update]: '.' + to_update + '_' + cur_color});
+
+                check_win(cur_row, 6, prev_color);
+
                 combined = '.col6_' + cur_color;
                 ref.update({'cur_position': [combined]});
             }
@@ -803,8 +852,9 @@ $('.col0').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col1').hover(function() {
@@ -813,8 +863,9 @@ $('.col1').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col2').hover(function() {
@@ -823,8 +874,9 @@ $('.col2').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col3').hover(function() {
@@ -833,8 +885,9 @@ $('.col3').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col4').hover(function() {
@@ -843,8 +896,9 @@ $('.col4').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col5').hover(function() {
@@ -853,8 +907,9 @@ $('.col5').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
 
 $('.col6').hover(function() {
@@ -863,6 +918,7 @@ $('.col6').hover(function() {
         if (snapshot.val().toString() != combined) {
             ref.update({'prev_shown_piece': [snapshot.val().toString()]});
         }
+    }).then(function() {
+        ref.update({'cur_position': [combined]});
     })
-    ref.update({'cur_position': [combined]});
 })
