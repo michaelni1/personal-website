@@ -14,6 +14,14 @@ firebase.analytics();
 
 var ref = firebase.database().ref();
 
+if (performance.navigation.type == 1) {
+    reset_board();
+}
+
+$(window).on('load', function() {
+    reset_board();
+});
+
 ref.update({'to_hide': ''});
 
 ref.update({'cur_position': '.col0_red'});
@@ -23,10 +31,6 @@ ref.update({'prev_shown_piece': '.col0_red'});
 ref.update({'has_won': 'false'});
 
 var cur_color = 'red';
-
-if (performance.navigation.type == 1) {
-    reset_board();
-}
 
 ref.child('to_hide').on('value', function(snapshot) {
     $(snapshot.val().toString()).css('display', 'none');
