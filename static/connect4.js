@@ -420,7 +420,7 @@ function check_win(row, col, win_color) {
     let start_col = col;
 
     //check up for same color pieces
-    while (row > 0 && piece_count != 4) {
+    while (row > 0) {
         --row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -439,7 +439,7 @@ function check_win(row, col, win_color) {
     //reset row
     row = start_row;
     //check down for same color pieces
-    while (row < 5 && piece_count != 4) {
+    while (row < 5) {
         ++row;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -456,7 +456,7 @@ function check_win(row, col, win_color) {
         }
     }
     //check if up down wins
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -466,7 +466,7 @@ function check_win(row, col, win_color) {
     //reset
     row = start_row;
     //check right
-    while (col < 6 && piece_count != 4) {
+    while (col < 6) {
         ++col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -484,7 +484,7 @@ function check_win(row, col, win_color) {
     }
     col = start_col;
     //check left
-    while (col > 0 && piece_count != 4) {
+    while (col > 0) {
         --col;
         let to_break = false;
         ref.child(row.toString() + col.toString()).once('value', function(snapshot) {
@@ -500,7 +500,7 @@ function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -548,7 +548,7 @@ function check_win(row, col, win_color) {
     }
     row = start_row
     col = start_col
-    if (piece_count == 4) {
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
         return;
     }
@@ -593,13 +593,7 @@ function check_win(row, col, win_color) {
             break;
         }
     }
-    if (piece_count == 4) {
-        setTimeout(function() {
-            alert(win_color + ' wins!!');
-        }, 100)
-        setTimeout(function() {
-            $('body').css('background', win_color);
-        }, 100);
+    if (piece_count >= 4) {
         ref.update({'has_won': 'true_' + win_color});
     }
 }
