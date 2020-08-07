@@ -24,6 +24,10 @@ ref.update({'has_won': 'false'});
 
 var cur_color = 'red';
 
+if (performance.navigation.type == 1) {
+    reset_board();
+}
+
 ref.child('to_hide').on('value', function(snapshot) {
     $(snapshot.val().toString()).css('display', 'none');
 })
