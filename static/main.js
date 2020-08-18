@@ -147,6 +147,7 @@ var about_exec = false;
 
 $('.nav-item_bout').click(function() {
     if (!about_exec) {
+        window.history.pushState("", document.title, window.location.pathname);
         $('#about_div').css('background-color', 'transparent');
         $('.boutme_hide').hide();
         $('.boutme_transit').show();
@@ -164,6 +165,7 @@ var res_exec = false;
 
 $('.nav-item_res').click(function() {
     if (!res_exec) {
+        window.history.pushState("", document.title, window.location.pathname);
         $('#resume_div').css('background-color', 'transparent');
         $('.resume_hide').hide();
         $('.resume_transit').show();
@@ -181,6 +183,7 @@ var inter_exec = false;
 
 $('.nav-item_inter').click(function() {
     if (!inter_exec) {
+        window.history.pushState("", document.title, window.location.pathname);
         $('#interests_div').css('background-color', 'transparent');
         $('.interests_hide').hide();
         $('.interests_transit').show();
@@ -196,6 +199,7 @@ $('.nav-item_inter').click(function() {
 
 $('.nav-item_pro').click(function() {
     if (!executed) {
+        window.history.pushState("", document.title, window.location.pathname);
         $('#projects_div').css('background-color', 'transparent');
         $('.projects_hide').hide();
         $('.projects_transit').show();
@@ -206,10 +210,6 @@ $('.nav-item_pro').click(function() {
         $('#projects_div').css('overflow', 'visible');
         executed = true;
     }
-});
-
-$(window).on('hashchange', function(e){
-    window.history.pushState("", document.title, window.location.pathname);
 });
 
 $(window).on('load', function() {
