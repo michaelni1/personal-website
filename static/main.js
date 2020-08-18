@@ -70,27 +70,31 @@ $('.boutme_hide').click(function() {
 });
 
 $('#resume_div').click(function() {
-    $('#resume_div').css('background-color', 'transparent');
-    $('.resume_hide').hide();
-    $('.resume_transit').show();
-    $('.resume2_transit').show();
-    $('.resume_transit').hide('slide', {direction:'left'}, 1000);
-    $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
-    $('#resume_div').css('margin-bottom', '1000px');
-    $('#resume_div').css('overflow', 'visible');
-    $('#resume_div').css('pointer-events', 'none');
+    if (!res_exec) {
+        $('#resume_div').css('background-color', 'transparent');
+        $('.resume_hide').hide();
+        $('.resume_transit').show();
+        $('.resume2_transit').show();
+        $('.resume_transit').hide('slide', {direction:'left'}, 1000);
+        $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
+        $('#resume_div').css('margin-bottom', '865px');
+        $('#resume_div').css('overflow', 'visible');
+        res_exec = true;
+    }
 });
 
 $('.resume_hide').click(function() {
-    $('#resume_div').css('background-color', 'transparent');
-    $('.resume_hide').hide();
-    $('.resume_transit').show();
-    $('.resume2_transit').show();
-    $('.resume_transit').hide('slide', {direction:'left'}, 1000);
-    $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
-    $('#resume_div').css('margin-bottom', '1000px');
-    $('#resume_div').css('overflow', 'visible');
-    $('#resume_div').css('pointer-events', 'none');
+    if (!res_exec) {
+        $('#resume_div').css('background-color', 'transparent');
+        $('.resume_hide').hide();
+        $('.resume_transit').show();
+        $('.resume2_transit').show();
+        $('.resume_transit').hide('slide', {direction:'left'}, 1000);
+        $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
+        $('#resume_div').css('margin-bottom', '865px');
+        $('#resume_div').css('overflow', 'visible');
+        res_exec = true;
+    }
 });
 
 $('#interests_div').click(function() {
@@ -174,9 +178,8 @@ $('.nav-item_res').click(function() {
         $('.resume2_transit').show();
         $('.resume_transit').hide('slide', {direction:'left'}, 1000);
         $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
-        $('#resume_div').css('margin-bottom', '1000px');
+        $('#resume_div').css('margin-bottom', '865px');
         $('#resume_div').css('overflow', 'visible');
-        $('#resume_div').css('pointer-events', 'none');
         res_exec = true;
     }
 });
@@ -255,7 +258,7 @@ $(window).on('load', function() {
                 $('.resume2_transit').show();
                 $('.resume_transit').hide('slide', {direction:'left'}, 1000);
                 $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
-                $('#resume_div').css('margin-bottom', '1000px');
+                $('#resume_div').css('margin-bottom', '865px');
                 $('#resume_div').css('overflow', 'visible');
                 $('#resume_div').css('pointer-events', 'none');
                 document.getElementById('resume').scrollIntoView();
