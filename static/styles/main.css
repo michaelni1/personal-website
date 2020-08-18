@@ -237,17 +237,38 @@ p {
     width: 100%;
 }
 .connect4 {
+    display: inline-block;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-right: 50px;
 }
-.connect4_text {
+.project_text {
     color: white;
     font-weight: bolder;
     -webkit-text-stroke: 1px black;
     font-size: 100%;
+}
+.bsquared {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 50px;
+}
+.class_projects {
+    display: inline-block;
+    margin-top: 50px;
+    padding-right: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .headers {
     margin-top: 50px;
