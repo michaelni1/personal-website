@@ -143,40 +143,55 @@ $('.projects_hide').click(function() {
     }
 });
 
+var about_exec = false;
+
 $('.nav-item_bout').click(function() {
-    $('#about_div').css('background-color', 'transparent');
-    $('.boutme_hide').hide();
-    $('.boutme_transit').show();
-    $('.boutme2_transit').show();
-    $('.boutme_transit').hide('slide', {direction:'left'}, 1000);
-    $('.boutme2_transit').hide('slide', {direction:'right'}, 1000);
-    $('#about_div').css('margin-bottom', '225px');
-    $('#about_div').css('overflow', 'visible');
-    $('#about_div').css('pointer-events', 'none');
+    if (!about_exec) {
+        $('#about_div').css('background-color', 'transparent');
+        $('.boutme_hide').hide();
+        $('.boutme_transit').show();
+        $('.boutme2_transit').show();
+        $('.boutme_transit').hide('slide', {direction:'left'}, 1000);
+        $('.boutme2_transit').hide('slide', {direction:'right'}, 1000);
+        $('#about_div').css('margin-bottom', '225px');
+        $('#about_div').css('overflow', 'visible');
+        $('#about_div').css('pointer-events', 'none');
+        about_exec = true;
+    }
 });
+
+var res_exec = false;
 
 $('.nav-item_res').click(function() {
-    $('#resume_div').css('background-color', 'transparent');
-    $('.resume_hide').hide();
-    $('.resume_transit').show();
-    $('.resume2_transit').show();
-    $('.resume_transit').hide('slide', {direction:'left'}, 1000);
-    $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
-    $('#resume_div').css('margin-bottom', '1000px');
-    $('#resume_div').css('overflow', 'visible');
-    $('#resume_div').css('pointer-events', 'none');
+    if (!res_exec) {
+        $('#resume_div').css('background-color', 'transparent');
+        $('.resume_hide').hide();
+        $('.resume_transit').show();
+        $('.resume2_transit').show();
+        $('.resume_transit').hide('slide', {direction:'left'}, 1000);
+        $('.resume2_transit').hide('slide', {direction:'right'}, 1000);
+        $('#resume_div').css('margin-bottom', '1000px');
+        $('#resume_div').css('overflow', 'visible');
+        $('#resume_div').css('pointer-events', 'none');
+        res_exec = true;
+    }
 });
 
+var inter_exec = false;
+
 $('.nav-item_inter').click(function() {
-    $('#interests_div').css('background-color', 'transparent');
-    $('.interests_hide').hide();
-    $('.interests_transit').show();
-    $('.interests2_transit').show();
-    $('.interests_transit').hide('slide', {direction:'left'}, 1000);
-    $('.interests2_transit').hide('slide', {direction:'right'}, 1000);
-    $('#interests_div').css('margin-bottom', '300px');
-    $('#interests_div').css('overflow', 'visible');
-    $('#interests_div').css('pointer-events', 'none');
+    if (!inter_exec) {
+        $('#interests_div').css('background-color', 'transparent');
+        $('.interests_hide').hide();
+        $('.interests_transit').show();
+        $('.interests2_transit').show();
+        $('.interests_transit').hide('slide', {direction:'left'}, 1000);
+        $('.interests2_transit').hide('slide', {direction:'right'}, 1000);
+        $('#interests_div').css('margin-bottom', '300px');
+        $('#interests_div').css('overflow', 'visible');
+        $('#interests_div').css('pointer-events', 'none');
+        inter_exec = true;
+    }
 });
 
 $('.nav-item_pro').click(function() {
