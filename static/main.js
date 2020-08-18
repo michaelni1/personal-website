@@ -217,6 +217,7 @@ $(window).on('load', function() {
         var hash = window.location.hash.substring(1);
         if (hash == 'projects') {
             if (!executed) {
+                window.history.pushState("", document.title, window.location.pathname);
                 $('#projects_div').css('background-color', 'transparent');
                 $('.projects_hide').hide();
                 $('.projects_transit').show();
@@ -231,6 +232,7 @@ $(window).on('load', function() {
         }
         else if (hash == 'interests') {
             if (!inter_exec) {
+                window.history.pushState("", document.title, window.location.pathname);
                 $('#interests_div').css('background-color', 'transparent');
                 $('.interests_hide').hide();
                 $('.interests_transit').show();
@@ -246,6 +248,7 @@ $(window).on('load', function() {
         }
         else if (hash == 'resume') {
             if (!res_exec) {
+                window.history.pushState("", document.title, window.location.pathname);
                 $('#resume_div').css('background-color', 'transparent');
                 $('.resume_hide').hide();
                 $('.resume_transit').show();
@@ -261,6 +264,7 @@ $(window).on('load', function() {
         }
         else if (hash == 'about') {
             if (!about_exec) {
+                window.history.pushState("", document.title, window.location.pathname);
                 $('#about_div').css('background-color', 'transparent');
                 $('.boutme_hide').hide();
                 $('.boutme_transit').show();
